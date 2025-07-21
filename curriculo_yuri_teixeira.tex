@@ -1,0 +1,211 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fontawesome}
+\usepackage{hyperref}
+\usepackage{array}
+
+% Configurações da página
+\geometry{left=2cm,right=2cm,top=2cm,bottom=2cm}
+\pagestyle{empty}
+
+% Cores
+\definecolor{darkblue}{RGB}{0,102,204}
+\definecolor{lightgray}{RGB}{128,128,128}
+\definecolor{darkgray}{RGB}{64,64,64}
+
+% Configuração dos links
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    urlcolor=darkblue,
+    pdftitle={Currículo - Yuri Teixeira},
+    pdfauthor={Yuri Teixeira}
+}
+
+% Formatação dos títulos
+\titleformat{\section}{\large\bfseries\color{darkblue}}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{15pt}{8pt}
+
+\titleformat{\subsection}{\normalsize\bfseries\color{darkgray}}{}{0em}{}
+\titlespacing{\subsection}{0pt}{8pt}{4pt}
+
+% Comando personalizado para itens de experiência
+\newcommand{\experiencia}[4]{
+    \subsection{#1, #2 — #3}
+    \textit{#4}
+    \vspace{4pt}
+}
+
+% Comando personalizado para formação
+\newcommand{\formacao}[4]{
+    \subsection{#1, #2 — #3}
+    \textit{#4}
+    \vspace{4pt}
+}
+
+\begin{document}
+
+% Cabeçalho
+\begin{center}
+    {\huge\bfseries\color{darkblue} YURI TEIXEIRA}
+    \vspace{8pt}
+    
+    {\large Analista e Desenvolvedor de Sistemas}
+    \vspace{4pt}
+    
+    {\color{darkgray} Universidade Ampli | Experiência com desenvolvimento web, nuvem e gerenciamento de dados}
+    \vspace{12pt}
+    
+    \begin{tabular}{c c c}
+        \faMapMarker\ Rua Tomé de Souza, 449, Sabará - MG, 34555-130 & 
+        \faPhone\ +55 31 99730-0623 & 
+        \faEnvelope\ \href{mailto:yuri3gp@gmail.com}{yuri3gp@gmail.com} \\
+        & & \faGithub\ \href{https://github.com/yuri3gp}{github.com/yuri3gp}
+    \end{tabular}
+\end{center}
+
+\vspace{20pt}
+
+% Experiência Profissional
+\section{EXPERIÊNCIA PROFISSIONAL}
+
+\experiencia{Mundomídia LTDA}{Belo Horizonte}{Desenvolvedor Full Stack}{Abril de 2023 – Até o momento}
+\begin{itemize}[leftmargin=20pt, topsep=0pt, itemsep=2pt]
+    \item Desenvolvimento e manutenção de sistema de gerenciamento de oficina, imobiliária e revenda de veículos
+    \item Desenvolvimento Web e Mobile
+    \item Criação de microsserviços e integrações com APIs externas
+\end{itemize}
+
+\vspace{8pt}
+
+\experiencia{Datasmart}{Portugal}{Desenvolvedor Full Stack - Projeto}{Novembro de 2024 – Junho de 2025}
+\begin{itemize}[leftmargin=20pt, topsep=0pt, itemsep=2pt]
+    \item Desenvolvimento de sistema de bilheteria para arena de tourada
+    \item Criação de representação visual interativa da arena usando SVG e React
+    \item Desenvolvimento de sistema web de ponto de venda para ingressos
+    \item Implementação de backoffice para gestão de vendas e controle de bilheteria
+\end{itemize}
+
+\vspace{8pt}
+
+\experiencia{Sillion Serviços de Tecnologia LTDA}{Belo Horizonte}{Desenvolvedor Full Stack}{Outubro de 2020 - Dezembro de 2022}
+\begin{itemize}[leftmargin=20pt, topsep=0pt, itemsep=2pt]
+    \item Desenvolvimento e manutenção de sistema de rastreamento de veículos
+    \item Gerenciamento de dados e tecnologias envolvidas no rastreamento
+    \item Desenvolvimento Web, Mobile e criação de microsserviços
+\end{itemize}
+
+\vspace{8pt}
+
+\experiencia{Estado de Minas Gerais}{Minas Gerais}{Professor de Informática}{Abril de 2014 - Setembro de 2020}
+\begin{itemize}[leftmargin=20pt, topsep=0pt, itemsep=2pt]
+    \item Ministração de aulas de informática e programação
+    \item Desenvolvimento de material didático e currículos técnicos
+    \item Capacitação de alunos em tecnologias da informação
+    \item Orientação em projetos acadêmicos e técnicos
+\end{itemize}
+
+\vspace{8pt}
+
+\experiencia{Sidim Sistemas LTDA}{Belo Horizonte}{Desenvolvedor Full Stack}{Março de 2013 - Março de 2014}
+\begin{itemize}[leftmargin=20pt, topsep=0pt, itemsep=2pt]
+    \item Desenvolvimento e manutenção de sistemas de gestão pública municipal
+    \item Atuação nas áreas da saúde, educação e assistência social
+\end{itemize}
+
+\vspace{15pt}
+
+% Formação
+\section{FORMAÇÃO}
+
+\formacao{Ampli}{Belo Horizonte}{Tecnólogo}{Outubro de 2020 - Outubro de 2022}
+Curso Superior de Tecnologia da Informação
+
+\vspace{8pt}
+
+\formacao{Colégio Augustus}{Belo Horizonte}{Técnico}{Abril de 2013 - Abril de 2015}
+Curso Técnico de Informática
+
+\vspace{15pt}
+
+% Competências Técnicas
+\section{COMPETÊNCIAS TÉCNICAS}
+
+\begin{minipage}[t]{0.48\textwidth}
+    \subsection{Linguagens de Programação}
+    \begin{itemize}[leftmargin=15pt, topsep=0pt, itemsep=1pt]
+        \item C\#
+        \item PHP
+        \item Node.js
+    \end{itemize}
+    
+    \vspace{8pt}
+    
+    \subsection{Frameworks}
+    \begin{itemize}[leftmargin=15pt, topsep=0pt, itemsep=1pt]
+        \item .NET
+        \item Laravel
+        \item Express.js
+    \end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \subsection{Front-End}
+    \begin{itemize}[leftmargin=15pt, topsep=0pt, itemsep=1pt]
+        \item jQuery
+        \item React
+    \end{itemize}
+    
+    \vspace{8pt}
+    
+    \subsection{Banco de Dados}
+    \begin{itemize}[leftmargin=15pt, topsep=0pt, itemsep=1pt]
+        \item MySQL
+        \item SQL Server
+        \item PostgreSQL
+        \item MongoDB
+    \end{itemize}
+\end{minipage}
+
+\vspace{15pt}
+
+% Cursos e Certificações
+\section{CURSOS E CERTIFICAÇÕES}
+
+\begin{minipage}[t]{0.48\textwidth}
+    \subsection{Alura}
+    \begin{itemize}[leftmargin=15pt, topsep=0pt, itemsep=1pt]
+        \item Laravel
+        \item C\#
+        \item Node.js
+        \item React
+    \end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \subsection{Udemy}
+    \begin{itemize}[leftmargin=15pt, topsep=0pt, itemsep=1pt]
+        \item Curso Avançado de Docker
+        \item React Profissional
+        \item AWS
+    \end{itemize}
+\end{minipage}
+
+\vspace{15pt}
+
+% Idiomas
+\section{IDIOMAS}
+
+\begin{itemize}[leftmargin=20pt, topsep=0pt, itemsep=2pt]
+    \item \textbf{Inglês} - Avançado
+    \item \textbf{Espanhol} - Avançado
+    \item \textbf{Português} - Nativo
+\end{itemize}
+
+\end{document}
