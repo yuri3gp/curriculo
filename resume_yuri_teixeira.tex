@@ -1,0 +1,211 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fontawesome}
+\usepackage{hyperref}
+\usepackage{array}
+
+% Configurações da página
+\geometry{left=2cm,right=2cm,top=2cm,bottom=2cm}
+\pagestyle{empty}
+
+% Cores
+\definecolor{darkblue}{RGB}{0,102,204}
+\definecolor{lightgray}{RGB}{128,128,128}
+\definecolor{darkgray}{RGB}{64,64,64}
+
+% Configuração dos links
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    urlcolor=darkblue,
+    pdftitle={Resume - Yuri Teixeira},
+    pdfauthor={Yuri Teixeira}
+}
+
+% Formatação dos títulos
+\titleformat{\section}{\large\bfseries\color{darkblue}}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{15pt}{8pt}
+
+\titleformat{\subsection}{\normalsize\bfseries\color{darkgray}}{}{0em}{}
+\titlespacing{\subsection}{0pt}{8pt}{4pt}
+
+% Command for experience items
+\newcommand{\experiencia}[4]{
+    \subsection{#1, #2 — #3}
+    \textit{#4}
+    \vspace{4pt}
+}
+
+% Command for education
+\newcommand{\formacao}[4]{
+    \subsection{#1, #2 — #3}
+    \textit{#4}
+    \vspace{4pt}
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\huge\bfseries\color{darkblue} YURI TEIXEIRA}
+    \vspace{8pt}
+    
+    {\large Systems Analyst and Developer}
+    \vspace{4pt}
+    
+    {\color{darkgray} Ampli University | Experience with web development, cloud and data management}
+    \vspace{12pt}
+    
+    \begin{tabular}{c c c}
+        \faMapMarker\ Rua Tomé de Souza, 449, Sabará - MG, 34555-130 & 
+        \faPhone\ +55 31 99730-0623 & 
+        \faEnvelope\ \href{mailto:yuri3gp@gmail.com}{yuri3gp@gmail.com} \\
+        & & \faGithub\ \href{https://github.com/yuri3gp}{github.com/yuri3gp}
+    \end{tabular}
+\end{center}
+
+\vspace{20pt}
+
+% Professional Experience
+\section{PROFESSIONAL EXPERIENCE}
+
+\experiencia{Mundomídia LTDA}{Belo Horizonte}{Full Stack Developer}{April 2023 – Present}
+\begin{itemize}[leftmargin=20pt, topsep=0pt, itemsep=2pt]
+    \item Development and maintenance of management systems for workshops, real estate, and vehicle resale
+    \item Web and Mobile Development
+    \item Creation of microservices and integrations with external APIs
+\end{itemize}
+
+\vspace{8pt}
+
+\experiencia{Datasmart}{Portugal}{Full Stack Developer - Project}{November 2024 – June 2025}
+\begin{itemize}[leftmargin=20pt, topsep=0pt, itemsep=2pt]
+    \item Development of ticketing system for bullfighting arena
+    \item Creation of interactive visual representation of the arena using SVG and React
+    \item Development of web point-of-sale system for tickets
+    \item Implementation of backoffice for sales management and ticket control
+\end{itemize}
+
+\vspace{8pt}
+
+\experiencia{Sillion Serviços de Tecnologia LTDA}{Belo Horizonte}{Full Stack Developer}{October 2020 - December 2022}
+\begin{itemize}[leftmargin=20pt, topsep=0pt, itemsep=2pt]
+    \item Development and maintenance of vehicle tracking system
+    \item Data management and technologies involved in tracking
+    \item Web and Mobile development and microservices creation
+\end{itemize}
+
+\vspace{8pt}
+
+\experiencia{State of Minas Gerais}{Minas Gerais}{Computer Science Teacher}{April 2014 - September 2020}
+\begin{itemize}[leftmargin=20pt, topsep=0pt, itemsep=2pt]
+    \item Teaching computer science and programming classes
+    \item Development of educational materials and technical curricula
+    \item Training students in information technologies
+    \item Guidance on academic and technical projects
+\end{itemize}
+
+\vspace{8pt}
+
+\experiencia{Sidim Sistemas LTDA}{Belo Horizonte}{Full Stack Developer}{March 2013 - March 2014}
+\begin{itemize}[leftmargin=20pt, topsep=0pt, itemsep=2pt]
+    \item Development and maintenance of municipal public management systems
+    \item Work in healthcare, education, and social assistance areas
+\end{itemize}
+
+\vspace{15pt}
+
+% Education
+\section{EDUCATION}
+
+\formacao{Ampli}{Belo Horizonte}{Technology Degree}{October 2020 - October 2022}
+Higher Education in Information Technology
+
+\vspace{8pt}
+
+\formacao{Colégio Augustus}{Belo Horizonte}{Technical Degree}{April 2013 - April 2015}
+Technical Course in Computer Science
+
+\vspace{15pt}
+
+% Technical Skills
+\section{TECHNICAL SKILLS}
+
+\begin{minipage}[t]{0.48\textwidth}
+    \subsection{Programming Languages}
+    \begin{itemize}[leftmargin=15pt, topsep=0pt, itemsep=1pt]
+        \item C\#
+        \item PHP
+        \item Node.js
+    \end{itemize}
+    
+    \vspace{8pt}
+    
+    \subsection{Frameworks}
+    \begin{itemize}[leftmargin=15pt, topsep=0pt, itemsep=1pt]
+        \item .NET
+        \item Laravel
+        \item Express.js
+    \end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \subsection{Front-End}
+    \begin{itemize}[leftmargin=15pt, topsep=0pt, itemsep=1pt]
+        \item jQuery
+        \item React
+    \end{itemize}
+    
+    \vspace{8pt}
+    
+    \subsection{Databases}
+    \begin{itemize}[leftmargin=15pt, topsep=0pt, itemsep=1pt]
+        \item MySQL
+        \item SQL Server
+        \item PostgreSQL
+        \item MongoDB
+    \end{itemize}
+\end{minipage}
+
+\vspace{15pt}
+
+% Courses and Certifications
+\section{COURSES AND CERTIFICATIONS}
+
+\begin{minipage}[t]{0.48\textwidth}
+    \subsection{Alura}
+    \begin{itemize}[leftmargin=15pt, topsep=0pt, itemsep=1pt]
+        \item Laravel
+        \item C\#
+        \item Node.js
+        \item React
+    \end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \subsection{Udemy}
+    \begin{itemize}[leftmargin=15pt, topsep=0pt, itemsep=1pt]
+        \item Advanced Docker Course
+        \item Professional React
+        \item AWS
+    \end{itemize}
+\end{minipage}
+
+\vspace{15pt}
+
+% Languages
+\section{LANGUAGES}
+
+\begin{itemize}[leftmargin=20pt, topsep=0pt, itemsep=2pt]
+    \item \textbf{English} - Advanced
+    \item \textbf{Spanish} - Advanced
+    \item \textbf{Portuguese} - Native
+\end{itemize}
+
+\end{document}
