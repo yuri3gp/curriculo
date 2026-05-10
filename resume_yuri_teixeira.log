@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.5.10)  10 MAY 2026 14:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.5.10)  10 MAY 2026 14:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -361,7 +361,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 65.
 
-Overfull \hbox (51.3311pt too wide) in paragraph at lines 65--71
+Overfull \hbox (54.05116pt too wide) in paragraph at lines 65--72
  [][] 
  []
 
@@ -373,12 +373,19 @@ Overfull \hbox (51.3311pt too wide) in paragraph at lines 65--71
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-Package rerunfilecheck Info: File `resume_yuri_teixeira.out' has not changed.
-(rerunfilecheck)             Checksum: 7D1EC0FC7AEF0EC08ECD77D96A14211D;4063.
+
+
+Package rerunfilecheck Warning: File `resume_yuri_teixeira.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `resume_yuri_teixeira.out':
+(rerunfilecheck)             Before: 7D1EC0FC7AEF0EC08ECD77D96A14211D;4063
+(rerunfilecheck)             After:  9C4920135B519BA99E508494AD169C65;4383.
  ) 
 Here is how much of TeX's memory you used:
- 10905 strings out of 476162
- 169825 string characters out of 5794814
+ 10906 strings out of 476162
+ 169834 string characters out of 5794814
  1939975 words of memory out of 5000000
  32788 multiletter control sequences out of 15000+600000
  566480 words of font info for 53 fonts, out of 8000000 for 9000
@@ -392,10 +399,10 @@ k> </home/yuri/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600p
 k> </home/yuri/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600p
 k> </home/yuri/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600p
 k>
-Output written on resume_yuri_teixeira.pdf (3 pages, 67750 bytes).
+Output written on resume_yuri_teixeira.pdf (3 pages, 72771 bytes).
 PDF statistics:
- 330 PDF objects out of 1000 (max. 8388607)
- 131 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 500000)
+ 346 PDF objects out of 1000 (max. 8388607)
+ 134 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
  161 words of extra memory for PDF output out of 10000 (max. 10000000)
 
